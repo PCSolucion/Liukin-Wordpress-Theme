@@ -15,19 +15,15 @@
 }
 ?>
      <!--Menu-->
-	  <nav class="navbar navbar-expand-md navbar-light bg-white" role="navigation">
+	  <nav class="navbar navbar-expand-md navbar-light bg-white">
   <div class="container">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
         <span class="navbar-toggler-icon"></span>
     </button>
-        <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+        <div class="navbar-brand">
 			<?php 
-			if ( function_exists( 'the_custom_logo' ) ) {
- 					the_custom_logo();
-			}
-			else{
-			echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
-			}
+           the_custom_logo();
+           echo '</div>';
         wp_nav_menu( array(
             'theme_location'    => 'primary',
             'depth'             => 2,

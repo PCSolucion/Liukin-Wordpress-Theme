@@ -79,4 +79,16 @@ function add_alt_tags($content)
     return $content;
 }
 add_filter('the_content', 'add_alt_tags', 99999);
+//Eliminar atributos type en etiquetas scripts y style
+add_action('wp_loaded', 'output_buffer_start');
+function output_buffer_start() { 
+    ob_start("output_callback"); 
+}
+add_action('shutdown', 'output_buffer_end');
+function output_buffer_end() { 
+ if (ob_get_length() > 0) { ob_end_clean();}
+ }
+function output_callback($buffer) {
+    return preg_replace( "%[ ]type=[\'\"]text\/(javascript|css)[\'\"]%", '', $buffer );
+}
 ?>

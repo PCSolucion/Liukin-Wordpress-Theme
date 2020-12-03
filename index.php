@@ -61,6 +61,5 @@
             </div>
             <!--Entradas-->
         </div>
-    </div>
     <!--Blog-->
     <?php get_footer();?>

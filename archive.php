@@ -27,17 +27,6 @@
     <?php $i = 1; while(have_posts()) : the_post();?>
         <div class="col-lg-4">
             <div class="col-lg-12 destacada-archive card-body phome">
-            <?php
-				if ( in_category('review') ) {
-            echo '<span class="anota">';
-            $terms = get_the_term_list( $post->ID, 'generos', '', ', ' ); 
-            $terms = strip_tags( $terms );
-            echo $terms;
-            echo '</span>';
-                }
-                else{
-                }
-            ?>
                         <?php if ( has_post_thumbnail() ) : ?>
                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                 <?php the_post_thumbnail(); ?>

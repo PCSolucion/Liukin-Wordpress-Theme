@@ -50,6 +50,5 @@
                 <?php get_sidebar();?>
         </div>
         </div>
-       </div>
     <!--Blog-->
 <?php get_footer();?>
