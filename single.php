@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row">
             <!--Posts-->
-            <div class="col-lg-12">
+            <div class="col-lg-8">
                 <!--Post-->
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <div class="card-body entry-content">
@@ -47,8 +47,9 @@
             </div>
                 <?php endwhile; endif; ?>
                 <!--Post-->
+                <?php get_sidebar();?>
         </div>
-            <!--Posts-->
         </div>
+       </div>
     <!--Blog-->
 <?php get_footer();?>

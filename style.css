@@ -106,7 +106,7 @@ input[type="search"] {
 	font-family: sans-serif;
 }
 .homedesc img {
-	width:auto;
+	width:100%;
 	height:auto;
 	max-height: 140px;
 	border-radius:2px;
@@ -346,4 +346,8 @@ p img{
 }
 .archive h1 {
 	font-size: 1.34375rem !important;
+}
+.cathome:hover{
+	text-decoration: none;
+	color:white
 }

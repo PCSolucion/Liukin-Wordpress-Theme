@@ -53,7 +53,7 @@ function liukin_widgets(){
 add_action('widgets_init', 'liukin_widgets');
 //Establecer el número de palabras de los excerpt
 function custom_excerpt_length( $length ) {
-	return 100;
+	return 60;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 //Eliminar[...] de los extractos de los posts

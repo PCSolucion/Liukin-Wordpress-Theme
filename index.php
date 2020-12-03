@@ -20,7 +20,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 entradas-home">
+            <div class="col-lg-8 entradas-home">
                 <!--Entrada-->
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 
@@ -50,7 +50,9 @@
                     </div>
                 </div>
                 <?php endwhile; endif; ?>
-                <!--Entrada-->
+                <!--Entrada-->  
+                </div>
+                <?php get_sidebar();?>
                 <!--Paginacion-->
                 <div class="card-body">
                    <?php get_template_part('template-parts/content', 'paginacion');?>
