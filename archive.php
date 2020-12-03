@@ -13,37 +13,6 @@
                     </button>
                         <input type="search" id="search-field2" placeholder="Escribe lo que necesites..." value="" name="s" autocomplete="off">
                         <button class="btn btn-lg btn-success" type="submit">Buscar</button>
-                        <?php
-								if ( in_category('recursos') ) {
-                                    echo '<div class="suggestion-wrap">
-                                    <a href="/tematica/fuentes/" rel="tag">Fuentes</a>
-								<a href="/tematica/vectores/" rel="tag">Vectores</a></span>
-								<a href="/tematica/iconos-psd/" rel="tag">Iconos PSD</a>
-								<a href="/tematica/plantillas-psd/" rel="tag">Plantillas PSD</a>
-                                <a href="/tematica/webs-psd/" rel="tag">Webs PSD</a>
-                                </div>';                           
-								}
-								else if ( in_category('temas-de-wordpress') ) {
-									echo '<div class="suggestion-wrap">
-                                    <a href="/tematica/belleza/" rel="tag">Belleza</a>
-									<a href="/tematica/blog/" rel="tag">Blog</a>
-									<a href="/tematica/bodas/" rel="tag">Bodas</a>
-									<a href="/tematica/clinica-hospital/" rel="tag">Hospital</a>
-									<a href="/tematica/deportes/" rel="tag">Deportes</a>
-									<a href="/tematica/diseno-arquitectura/" rel="tag">Diseño</a>
-									<a href="/tematica/educacion/" rel="tag">Educación</a>
-									<a href="/tematica/empresa-negocio/" rel="tag">Negocio</a>
-									<a href="/tematica/inmobiliaria/" rel="tag">Inmobiliaria</a>
-									<a href="/tematica/motor/" rel="tag">Motor</a>
-									<a href="/tematica/multitematico/" rel="tag">Multipropósito</a>
-									<a href="/tematica/musica-conciertos-grupos/" rel="tag">Música</a>
-									<a href="/tematica/noticias-magazine/" rel="tag">Noticias</a>
-									<a href="/tematica/portafolio/" rel="tag">Portafolio</a>
-									<a href="/tematica/tienda/" rel="tag">Tienda</a>
-									<a href="/tematica/viajes/" rel="tag">Viajes</a>
-                                </div>';
-                                    }
-								?>
                     </form>
                 </div>
             </div>
@@ -51,57 +20,6 @@
     </div>
     <div class="container">
     <br/>
-    <?php
-    if ( in_category('review')){
-        echo '<div class="container-fluid-dos">';
-        echo '<div class="row">';
-        echo '<div class="col-md-2 icocatreview">';
-        echo '<a href="https://pc-solucion.es/category/review/hardware/teclados/"><img class="img-rounded" src="https://res.cloudinary.com/pcsolucion/image/upload/v1569688488/Pcsolucion-LiukinTheme/reviews_de_teclados.jpg" /></a>' .'<br/>' .'<h3 class="categoriareview">Teclados</h3>';
-        echo '</div>';
-        echo '<div class="col-md-2 icocatreview">';
-        echo '<a href="https://pc-solucion.es/category/review/hardware/ratones/"><img class="img-rounded" src="https://res.cloudinary.com/pcsolucion/image/upload/v1569688140/Pcsolucion-LiukinTheme/reviews_de_ratones.jpg" /></a>' .'<br/>' .'<h3 class="categoriareview">Ratones</h3>';
-        echo '</div>';
-        echo '<div class="col-md-2 icocatreview">';
-        echo '<a href="https://pc-solucion.es/category/review/hardware/auriculares/"><img class="img-rounded" src="https://res.cloudinary.com/pcsolucion/image/upload/v1569687654/Pcsolucion-LiukinTheme/reviews_de_auriculares.jpg" /></a>' .'<br/>' .'<h3 class="categoriareview">Auriculares</h3>';
-        echo '</div>';
-        echo '<div class="col-md-2 icocatreview">';
-        echo '<a href="https://pc-solucion.es/category/review/hardware/almacenamiento/"><img class="img-rounded" src="https://res.cloudinary.com/pcsolucion/image/upload/v1569687874/Pcsolucion-LiukinTheme/reviews_de_ssd_discos_usb.jpg" /></a>' .'<br/>' .'<h3 class="categoriareview">Almacenamiento</h3>';
-        echo '</div>';  
-        echo '<div class="col-md-2 icocatreview">';
-        echo '<a href="https://pc-solucion.es/category/review/hardware/torres-cajas/"><img class="img-rounded" src="https://res.cloudinary.com/pcsolucion/image/upload/v1569688628/Pcsolucion-LiukinTheme/reviews_cajas_de_pc.jpg" /></a>' .'<br/>' .'<h3 class="categoriareview">Torres/Cajas</h3>';
-        echo '</div>';
-        echo '<div class="col-md-2 icocatreview">';
-        echo '<a href="https://pc-solucion.es/category/review/hardware/mandos-gamepads/"><img class="img-rounded" src="https://res.cloudinary.com/pcsolucion/image/upload/v1569687260/Pcsolucion-LiukinTheme/reviews_de_gamepads.jpg" /></a>' .'<br/>' .'<h3 class="categoriareview">Mandos/Gamepads</h3>';
-        echo '</div>';
-        
-        echo '</div>';
-        
-        echo '<div class="row">';
-        echo '<div class="col-md-2 icocatreview">';
-        echo '';
-        echo '</div>';
-        echo '<div class="col-md-2 icocatreview">';
-        echo '<a href="https://pc-solucion.es/category/review/hardware/monitores/"><img class="img-rounded" src="https://res.cloudinary.com/pcsolucion/image/upload/v1569691270/Pcsolucion-LiukinTheme/reviews_de_monitores.jpg" /></a>' .'<br/>' .'<h3 class="categoriareview">Monitores</h3>';
-        echo '</div>';
-        echo '<div class="col-md-2 icocatreview">';
-        echo '<a href="https://pc-solucion.es/category/review/hardware/tarjetas-graficas/"><img class="img-rounded" src="https://res.cloudinary.com/pcsolucion/image/upload/v1569691517/Pcsolucion-LiukinTheme/reviews_de_tarjetas_graficas.jpg" /></a>' .'<br/>' .'<h3 class="categoriareview">Tarjetas Gráficas</h3>';
-        echo '</div>';
-        echo '<div class="col-md-2 icocatreview">';
-        echo '<a href="https://pc-solucion.es/category/review/hardware/refrigeraciones/"><img class="img-rounded" src="https://res.cloudinary.com/pcsolucion/image/upload/v1569691657/Pcsolucion-LiukinTheme/reviews_de_refrigeracion_pc.jpg" /></a>' .'<br/>' .'<h3 class="categoriareview">Refrigeraciones</h3>';
-        echo '</div>';  
-        echo '<div class="col-md-2 icocatreview">';
-        echo '<a href="https://pc-solucion.es/category/review/hardware/webcams/"><img class="img-rounded" src="https://res.cloudinary.com/pcsolucion/image/upload/v1569691861/Pcsolucion-LiukinTheme/reviews_de_webcams.jpg" /></a>' .'<br/>' .'<h3 class="categoriareview">Webcams</h3>';
-        echo '</div>';
-        echo '<div class="col-md-2 icocatreview">';
-        echo '';
-        echo '</div>';
-    echo '</div>';
-    }
-    else{
-
-    }
-
-    ?>
     <br/>
     <h1 class="titulocat"><?php echo single_term_title(); ?></h1>
     <p class="descat"><?php echo term_description(); ?></p>
