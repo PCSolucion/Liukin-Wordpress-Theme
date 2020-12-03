@@ -13,7 +13,6 @@ function themename_custom_logo_setup() {
  add_theme_support( 'custom-logo', $defaults );
 }
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
-
 //Requires para el Menu
 require_once get_template_directory() . '/template-parts/class-wp-bootstrap-navwalker.php';
     function liukin_agregar_css_js(){
