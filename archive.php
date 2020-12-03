@@ -36,7 +36,6 @@
             echo '</span>';
                 }
                 else{
-
                 }
             ?>
                         <?php if ( has_post_thumbnail() ) : ?>
@@ -60,5 +59,4 @@
             <!--Entradas-->
         </div>
     </div>
-    <!--Blog-->
     <?php get_footer();?>
