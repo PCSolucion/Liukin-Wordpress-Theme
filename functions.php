@@ -43,7 +43,7 @@ add_action( 'after_setup_theme', 'liukin_setup' );
 function liukin_widgets(){
     register_sidebar( array(
         'id'            => 'widgets-derecha',
-        'name'          => __( 'Widgets Derecha' ),
+        'name'          => __( 'Sidebar Derecho' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s card-body sidebar">',
         'after_widget'  => '</div>',
         'before_title'  => '<h4>',
