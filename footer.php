@@ -1,8 +1,7 @@
-<!--Footer-->
 <div class="container-fluid py-4">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-2"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
                 <div class="col-md-2">
                     <ul class="srf-menu-items">
                         <li><a href="/nosotros/">Nosotros</a></li>
@@ -58,9 +57,7 @@
                 </div>
             </div>
         </div>
-</footer>
-    <!--Footer-->
-    <!-- Optional JavaScript -->
+    </footer>
     <?php wp_footer();?>
-</body>
+    </body>
 </html>

@@ -238,6 +238,7 @@ input[type="search"] {
 	width:80%;
 	margin-right:auto;
 }
+/*TITULOS DE LOS POSTS*/
 .single-post h1 {
 	border-left:3px solid #008ec2;
 	padding-left:8px;
@@ -251,6 +252,7 @@ input[type="search"] {
 	font-weight:700;
 	color:#555;
 }
+/*CONTENIDO DEL POST*/
 .entry-content p{
 	text-align:justify;
 }
@@ -261,9 +263,7 @@ input[type="search"] {
     line-height: 1.8;
 	text-align:justify;
 }
-.aft-home-icon {
-	background: #008ec2;
-}
+/*SCROLL AUTOMATICO*/
 .bottom-bar {
 	border-bottom: 4px solid #008ec2 !important;}
 button, input[type="button"], input[type="reset"], input[type="submit"] {
@@ -286,9 +286,6 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     color: #fff;
     background-color:  #008ec2;
     opacity: 1 !important;
-}
-.site-info{
-	display:none !important;
 }
 p iframe{
 	height:480px;}
@@ -319,7 +316,7 @@ p img{
 	width:550px;
 	height:auto;
 }
-/*Archive*/
+/*ARCHIVE*/
 .destacada-archive a img {
 	width:100%;
 	height:auto;

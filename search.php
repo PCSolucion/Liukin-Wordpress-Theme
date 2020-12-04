@@ -1,9 +1,7 @@
 <?php get_header();?>
-    <!--Blog-->
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <!--Entrada-->
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <div class="card-body phome">
                     <a href="<?php the_permalink();?>">
@@ -25,15 +23,10 @@
 						</form>	
 					</div>
 			    <?php endif;?>
-                <!--Entrada-->
-                <!--Paginacion-->
                 <div class="card-body">
                    <?php get_template_part('template-parts/content', 'paginacion');?>
                 </div>
-                <!--Paginacion-->
             </div>
-            <!--Entradas-->
         </div>
     </div>
-    <!--Blog-->
 <?php get_footer();?>

@@ -3,7 +3,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 ">
-                    <!--Buscador-->
                     <form role="search" method="get" class="search-form2" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <button class="btn-search" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -17,12 +16,9 @@
             </div>
         </div>
     </div>
-    <!--Blog-->
     <div class="container">
         <div class="row">
-            <!--Posts-->
             <div class="col-lg-8">
-                <!--Post-->
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <div class="card-body entry-content">
                         <h1><?php the_title();?></h1>
@@ -46,9 +42,7 @@
                 </div>
             </div>
                 <?php endwhile; endif; ?>
-                <!--Post-->
                 <?php get_sidebar();?>
         </div>
         </div>
-    <!--Blog-->
 <?php get_footer();?>

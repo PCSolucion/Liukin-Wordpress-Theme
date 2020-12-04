@@ -1,10 +1,8 @@
 <?php get_header();?>
-    <!--Blog-->
     <div class="formularioimagen">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 ">
-                    <!--Buscador-->
                     <form role="search" method="get" class="search-form2" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <button class="btn-search" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -27,25 +25,21 @@
     <?php $i = 1; while(have_posts()) : the_post();?>
         <div class="col-lg-4">
             <div class="col-lg-12 destacada-archive card-body phome">
-                        <?php if ( has_post_thumbnail() ) : ?>
-                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                                <?php the_post_thumbnail(); ?>
-                            </a>
-                        <?php endif; ?>
-                        <h2 class="nombre-archive"><a class="nombre-archive text-center"href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+                <?php if ( has_post_thumbnail() ) : ?>
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                        <?php the_post_thumbnail(); ?>
+                    </a>
+                    <?php endif; ?>
+                <h2 class="nombre-archive">
+                    <a class="nombre-archive text-center" href="<?php the_permalink();?>"><?php the_title();?></a>
+                </h2>      
             </div>
         </div>
         <?php if ( $i % 3 === 0 ) { echo '</div><div class="row">'; } ?>
-    <?php $i++; endwhile; wp_reset_query(); ?>
-</div>
-                <!--Entrada-->
-                <!--Paginacion-->
-                <div class="card-body">
-                   <?php get_template_part('template-parts/content', 'paginacion');?>
-                </div>
-                <!--Paginacion-->
-            </div>
-            <!--Entradas-->
+        <?php $i++; endwhile; wp_reset_query(); ?>
+        </div>
+        <div class="card-body">
+            <?php get_template_part('template-parts/content', 'paginacion');?>
         </div>
     </div>
-    <?php get_footer();?>
+<?php get_footer();?>

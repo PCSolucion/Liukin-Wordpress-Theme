@@ -23,7 +23,6 @@ require_once get_template_directory() . '/template-parts/class-wp-bootstrap-navw
     }
 function register_navwalker(){
 	require_once get_template_directory() . '/template-parts/class-wp-bootstrap-navwalker.php';
-	
 }
 register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'THEMENAME' ),

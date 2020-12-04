@@ -1,10 +1,8 @@
 <?php get_header();?>
-    <!--Blog-->
     <div class="formularioimagen">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 ">
-                    <!--Buscador-->
                     <form role="search" method="get" class="search-form2" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <button class="btn-search" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -21,17 +19,15 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 entradas-home">
-                <!--Entrada-->
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                
                 <div class="card-body phome">
-                <?php 
+                    <?php 
                                 $sep = '';
                                 foreach ((get_the_category()) as $cat) {
                                     echo $sep . '<a href="' . get_category_link($cat->term_id) . '"  class="cathome ' . $cat->slug . '" title="Ver todos los post de '. esc_attr($cat->name) . '">' . $cat->cat_name . '</a>';
                                 $sep = ' ';
                                 }
-                                ?>
+                    ?>
                     <a href="<?php the_permalink($post);?>">
                     <h2 class="entry-title <?php echo esc_attr($cat->name);?>" ><?php the_title();?></h2>
                     </a>
@@ -49,17 +45,12 @@
                         </div>
                     </div>
                 </div>
-                <?php endwhile; endif; ?>
-                <!--Entrada-->  
+                <?php endwhile; endif; ?> 
                 </div>
                 <?php get_sidebar();?>
-                <!--Paginacion-->
                 <div class="card-body">
                    <?php get_template_part('template-parts/content', 'paginacion');?>
                 </div>
-                <!--Paginacion-->
             </div>
-            <!--Entradas-->
         </div>
-    <!--Blog-->
     <?php get_footer();?>
