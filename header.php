@@ -7,7 +7,7 @@
   </head>
   <body <?php body_class();?>>
     <?php if ( is_home() ) { ?>
-    <h1 class="off"><?php bloginfo("name"); ?></h1>
+    <h1 class="nope"><?php bloginfo("name"); ?></h1>
     <?php }  else { ?>
     <?php
     }
