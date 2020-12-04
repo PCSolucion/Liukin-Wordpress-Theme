@@ -269,7 +269,6 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 					unset( $linkmod_classes[ $k ] );
 				}
 			}
-
 			// Put the item contents into $output.
 			$item_output .= isset( $args->link_before ) ? $args->link_before . $icon_html . $title . $args->link_after : '';
 			/**
