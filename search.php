@@ -11,8 +11,6 @@
                 </div>
                 <?php endwhile;?>
                 <?php else: ?>
-				    <img class="nadaqever center-block " src="https://res.cloudinary.com/pcsolucion/image/upload/v1558495332/Pcsolucion-LiukinTheme/nadaquever.gif">
-		            <br>
 		            <p class="nadena">No se ha encontrado nada relacionado con tu búsqueda, vuelve a pruebar con otras palabras</p>
 		            <br>
                     </p>
