@@ -11,7 +11,7 @@
                 </div>
                 <?php endwhile;?>
                 <?php else: ?>
-		            <p class="nadena">No se ha encontrado nada relacionado con tu búsqueda, vuelve a pruebar con otras palabras</p>
+		            <p class="nocin">No se ha encontrado nada relacionado con tu búsqueda, vuelve a pruebar con otras palabras</p>
 		            <br>
                     </p>
                     <div class="center-block">
