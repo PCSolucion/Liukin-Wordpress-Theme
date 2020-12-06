@@ -12,12 +12,19 @@ Tags:  blog,simple,fast,minimal,seo
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+/*GENERAL*/
 body {
 	background-color:#fafafa;
 }
 .nope{
 	display:none;
 }
+/*LOGO*/
+.custom-logo-link img{
+	width:60px;
+	height:60px;
+}
+/*MENU*/
 .navbar-light .navbar-nav .nav-link {
 	margin-left:11px;
 	color:#292929 !important;
@@ -28,11 +35,8 @@ body {
 	font-weight:600;
 	background-color:white;
 }
-.custom-logo-link img{
-	width:60px;
-	height:60px;
-}
-.formularioimagen {
+/*WEB BROWSER*/
+.search-web {
 	height:190px;
 	background:url(./img/fondose.jpg);
 	box-shadow:0 2px 4px -1px rgba(0,0,0,.25);
@@ -94,6 +98,7 @@ input[type="search"] {
 	background-color: #008ec2 !important;
 
 }
+/*HOME POSTS*/
 .phome {
 	margin-top: 30px;
     border: 1px solid #d3d3d361;
@@ -138,10 +143,11 @@ input[type="search"] {
 	letter-spacing:.004em;
 	font-size: 33px;
 }
-.entry-title:hover {
-	color: #2f3439 !important;
+.cathome:hover{
+	text-decoration: none;
+	color:white
 }
-/*CATEGORIAS Y SIN CATEGORIA*/
+/*CATEGORY MINIBOX*/
 .sin-categoria,.cathome,.sin-categoria:hover {
 	color:white;
 	background-color:#008ec2;
@@ -150,7 +156,102 @@ input[type="search"] {
 	padding:4px 5px 4px 5px;
 	font-weight:600;
 }
-/*FOOTER DE ENLACES*/
+/*POSTS TITLES*/
+.single-post h1 {
+	border-left:3px solid #008ec2;
+	padding-left:8px;
+}
+.single-post h2,.single h3,.single h5 {
+	border-left:2px solid #008ec2;
+	padding-left:6px;
+	margin-bottom:20px;
+	margin-top:10px;
+	font-family:'Saira',sans-serif;
+	font-weight:700;
+	color:#555;
+}
+/*CONTENT*/
+.entry-content p{
+	text-align:justify;
+}
+.catfecha{
+	margin-bottom:20px;
+	margin-top:15px;
+}
+.catfecha .fecha{
+	float: right;
+}
+p iframe{
+	height:480px;}
+figure{
+	max-width:100% !important;
+}
+.video-container iframe {
+	width:100% !important;
+}
+.post-thumbnail{
+	margin-bottom:15px;
+}
+p img{
+	display:block;
+	margin:auto;
+	width:550px;
+	height:auto;
+}
+.aligncenter img {
+	display:block;
+	margin:auto;
+}
+/*AUTO SCROLL*/
+.bottom-bar {
+	border-bottom: 4px solid #008ec2 !important;}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    border: none;
+    border-radius: 0;
+	background: #008ec2;}
+#scroll-up {
+    position: fixed;
+    z-index: 8000;
+    bottom: 40px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    background-color:  #008ec2;
+    opacity: 1 !important;
+}
+/*ARCHIVE*/
+.destacada-archive a img {
+	width:100%;
+	height:auto;
+	max-width:300px !important;
+	min-height: 180px;
+}
+.archive .nombre-archive a {
+	font-size:16px;
+	font-weight:500 !important;
+	padding-top:6px;
+	color:#000000bd;
+	font-weight:bold;
+}
+.entry-content p,.archive p {
+	font-family:'Saira',sans-serif;
+}
+.aligncenter {
+	width:98%;
+	margin:0 auto;
+}
+
+.archive h1 {
+	font-size: 1.34375rem !important;
+}
+/*FOOTER LINKS*/
 .container-fluid {
 	width:100%;
 	padding-right:15px;
@@ -196,7 +297,7 @@ input[type="search"] {
 .correof {
 	margin-left: 1%;
 }
-/*FOOTER FINAL*/
+/*LAST FOOTER*/
 .site-footer {
 	background-color:#212428 !important;
 	padding:15px 0;
@@ -222,14 +323,7 @@ input[type="search"] {
 	width:240px;
 	height:40px;
 }
-/*RESULTADOS DE BUSQUEDA VACIOS*/
-.nadaqever {
-	width:50%;
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:30px;
-}
+/*NO SEARCH RESULTS*/
 .noresults {
 	font-size:20px;
 	margin-top:35px;
@@ -237,114 +331,4 @@ input[type="search"] {
 	margin-left:auto;
 	width:80%;
 	margin-right:auto;
-}
-/*TITULOS DE LOS POSTS*/
-.single-post h1 {
-	border-left:3px solid #008ec2;
-	padding-left:8px;
-}
-.single-post h2,.single h3,.single h5 {
-	border-left:2px solid #008ec2;
-	padding-left:6px;
-	margin-bottom:20px;
-	margin-top:10px;
-	font-family:'Saira',sans-serif;
-	font-weight:700;
-	color:#555;
-}
-/*CONTENIDO DEL POST*/
-.entry-content p{
-	text-align:justify;
-}
-.catfecha{
-	margin-bottom:20px;
-}
-.post{
-    line-height: 1.8;
-	text-align:justify;
-}
-/*SCROLL AUTOMATICO*/
-.bottom-bar {
-	border-bottom: 4px solid #008ec2 !important;}
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-    border: none;
-    border-radius: 0;
-	background: #008ec2;}
-#scroll-up {
-    position: fixed;
-    z-index: 8000;
-    bottom: 40px;
-    right: 20px;
-    display: none;
-    width: 50px;
-    height: 50px;
-    font-size: 28px;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    color: #fff;
-    background-color:  #008ec2;
-    opacity: 1 !important;
-}
-p iframe{
-	height:480px;}
-#comments, .js-related-video{
-	display:none;
-}
-figure{
-	max-width:100% !important;
-}
-.js-av-player-container{
-	display:none !important;
-}
-.video-container iframe {
-	width:100% !important;
-}
-.post-thumbnail{
-	margin-bottom:15px;
-}
-.entry-content-wrap .read-img{
-	display:none;
-}
-strong em{
-	display:none;
-}
-p img{
-	display:block;
-	margin:auto;
-	width:550px;
-	height:auto;
-}
-/*ARCHIVE*/
-.destacada-archive a img {
-	width:100%;
-	height:auto;
-	max-width:300px !important;
-	min-height: 180px;
-}
-.archive .nombre-archive a {
-	font-size:16px;
-	font-weight:500 !important;
-	padding-top:6px;
-	color:#000000bd;
-	font-weight:bold;
-}
-.entry-content p,.archive p {
-	font-family:'Saira',sans-serif;
-}
-.aligncenter {
-	width:98%;
-	margin:0 auto;
-}
-.aligncenter img {
-	display:block;
-	margin:auto;
-}
-.archive h1 {
-	font-size: 1.34375rem !important;
-}
-.cathome:hover{
-	text-decoration: none;
-	color:white
 }
