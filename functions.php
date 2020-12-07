@@ -1,5 +1,5 @@
 <?php
-//Soporte para Logo personalizado
+//Custom Logo Support
 add_theme_support( 'custom-logo' );
 function themename_custom_logo_setup() {
  $defaults = array(
@@ -13,7 +13,7 @@ function themename_custom_logo_setup() {
  add_theme_support( 'custom-logo', $defaults );
 }
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
-//Requires para el Menu
+//Menu Requires
 require_once get_template_directory() . '/template-parts/class-wp-bootstrap-navwalker.php';
     function liukin_agregar_css_js(){
         wp_enqueue_style( 'style', get_stylesheet_uri());
@@ -29,7 +29,7 @@ register_nav_menus( array(
 ) );
 add_action( 'after_setup_theme', 'register_navwalker' );
 add_action('wp_enqueue_scripts','liukin_agregar_css_js');
-//Soporte para imagen destacadas y titulo de web
+//Post Thumbnails
 function liukin_setup(){
 if ( function_exists('add_theme_support')){
     add_theme_support('post-thumbnails');
@@ -37,7 +37,7 @@ if ( function_exists('add_theme_support')){
 add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'liukin_setup' );
-//Agregar Sidebar
+//Add Sidebar
 function liukin_widgets(){
     register_sidebar( array(
         'id'            => 'widgets-derecha',
@@ -49,17 +49,17 @@ function liukin_widgets(){
     ) );
 }
 add_action('widgets_init', 'liukin_widgets');
-//Establecer el número de palabras de los excerpt
+//Words in Excerpt
 function custom_excerpt_length( $length ) {
 	return 60;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-//Eliminar[...] de los extractos de los posts
+//Delete[...]from Excerpt
 function new_excerpt_more( $more ) {
     return '';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
-//Forzar atributo alt en las imagenes con el titulo del post
+//Force alt atribute on image
 function add_alt_tags($content)
 {
     global $post;
@@ -78,7 +78,7 @@ function add_alt_tags($content)
     return $content;
 }
 add_filter('the_content', 'add_alt_tags', 99999);
-//Eliminar atributos type en etiquetas scripts y style
+//Delete type atribute in script tag
 add_action('wp_loaded', 'output_buffer_start');
 function output_buffer_start() { 
     ob_start("output_callback"); 
