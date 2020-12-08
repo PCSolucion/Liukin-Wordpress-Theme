@@ -18,11 +18,11 @@
                     <?php the_date( get_option( 'date_format' ) ); ?>
                     </span>
 					</div>
-						<div class="lcontent">
+					<div class="lcontent">
                     <?php
                     echo the_content();
                     ?>
-							 </div>
+					</div>
                 </div>
             </div>
                 <?php endwhile; endif; ?>

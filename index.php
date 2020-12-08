@@ -2,7 +2,7 @@
     <?php get_template_part('template-parts/search-form', 'search-form');?>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 entradas-home">
+            <div class="col-lg-8 posts-home">
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <div class="card-body phome">
                     <?php 
