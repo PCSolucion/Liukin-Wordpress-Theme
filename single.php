@@ -6,7 +6,7 @@
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <div class="card-body entry-content">
                         <h1><?php the_title();?></h1>
-						<div class="catfecha">
+						<div class="minibox">
                         <?php 
                         $sep = '';
                         foreach ((get_the_category()) as $cat) {
@@ -14,11 +14,11 @@
                         $sep = ' ';
                         }
                     ?>
-                    <span class="fecha">
+                    <span class="ldate">
                     <?php the_date( get_option( 'date_format' ) ); ?>
                     </span>
 					</div>
-						<div class="contenido">
+						<div class="lcontent">
                     <?php
                     echo the_content();
                     ?>

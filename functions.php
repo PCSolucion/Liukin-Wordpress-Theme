@@ -42,7 +42,7 @@ function liukin_widgets(){
     register_sidebar( array(
         'id'            => 'widgets-derecha',
         'name'          => __( 'Sidebar Derecho' ),
-        'before_widget' => '<div id="%1$s" class="widget %2$s card-body sidebar">',
+        'before_widget' => '<div id="%1$s" class="widget %2$s sidebar-widget">',
         'after_widget'  => '</div>',
         'before_title'  => '<h4>',
         'after_title'   => '</h4>',

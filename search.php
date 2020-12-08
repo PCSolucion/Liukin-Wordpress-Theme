@@ -16,9 +16,9 @@
                     </p>
 			    <?php endif;?>
                 <div class="card-body">
-                <?php get_template_part('template-parts/search-form', 'search-form');?>
                 </div>
             </div>
         </div>
     </div>
+    <?php get_template_part('template-parts/search-form', 'search-form');?>
 <?php get_footer();?>
