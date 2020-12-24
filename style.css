@@ -122,20 +122,26 @@ input[type="search"] {
 	letter-spacing:.004em !important;
 	font-weight:500 !important;
 	font-size:1.10rem !important;
+	margin-top: 2px;
 }
 .home .cathome{
-	float: left;
-	margin-right: 10px;
-	color: #fff;
-    background-color: #008ec2;
-    padding: 1px 7px;
-    border-radius: 3px;
-	white-space: nowrap;
-	list-style: none;
-    font-size: 9px;
-    font-weight: 700;
-	text-transform: uppercase;
-	margin-top: 3px;
+	float:left;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    margin: 0 16px 8px 0;
+    padding: 0 10px 0 12px;
+    background: #008ec2;    
+    -webkit-border-radius: 3px;    
+    -webkit-border-radius: 3px;    
+	border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 10px;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    font-weight: bold;
 }
 .entry-title,.single h1 {
 	color:#111111 !important;
@@ -246,6 +252,10 @@ figure{
 .video-container iframe {
 	width:100% !important;
 }
+figure img{
+	max-width: 100%;
+	height: auto;
+}
 .post-thumbnail{
 	margin-bottom:15px;
 }
@@ -259,6 +269,38 @@ p img{
 .aligncenter img {
 	display:block;
 	margin:auto;
+}
+blockquote {
+	width:100%;
+	padding-left:20px;
+	padding-top:18px;
+	padding-bottom:18px;
+	padding-right:18px;
+	margin:5px;
+	background-position:middle left;
+	background-repeat:no-repeat;
+	text-indent:23px;
+}
+blockquote cite {
+	color:#f1f1f1;
+	font-size:14px;
+	display:block;
+	margin-top:5px;
+}
+blockquote p:before {
+	content:"\201C";
+	font-size:50px;
+	position:absolute;
+	margin-left:-48px;
+	margin-top:-20px;
+}
+blockquote p {
+	font-size:1em !important;
+	background-color:#f2f2f25e;
+	padding:12px;
+	border-radius:5px;
+	color:#222222e6;
+	border-left:2px solid #f2f2f2;
 }
 /*ARCHIVE*/
 .name-archive{
@@ -301,14 +343,14 @@ p img{
 .titfooter {
 	text-transform:uppercase;
 	color:#fff !important;
-	font-size:10px;
+	font-size:13px;
 }
 .srf-menu-items {
 	list-style:none;
 }
 .srf-menu-items li a {
 	color:#999;
-	font-size:11px;
+	font-size:16px;
 }
 .socialf {
 	margin-right:7px;
